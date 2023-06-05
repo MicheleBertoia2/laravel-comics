@@ -1,18 +1,18 @@
 footer{
     height: 360px;
     background-image: url('/img/footer-bg.jpg');
-    .f-top{
+    .mb-f-top{
       overflow: hidden;
       height: calc(100% - 80px);
       display: flex;
       justify-content: space-between;
-      .f-left{
+      .mb-f-left{
         height: 100%;
         padding: 20px 0;
         width: 35%;
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        flex-direction: column !important;
+        flex-wrap: wrap !important;
         ul{
           margin-bottom: 10px;
           li{
@@ -45,7 +45,7 @@ footer{
     .f-social{
       height: 80px;
       background-color: $color-black;
-      .container{
+      .mb-container{
         height: 100%;
         @include centerFlex(vertical);
         justify-content: space-between;

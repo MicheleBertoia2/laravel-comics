@@ -3,9 +3,9 @@
 @endphp
 
 <footer>
-    <div class="f-top mb-container">
+    <div class="mb-f-top mb-container">
 
-        <div class="f-left">
+        <div class="mb-f-left">
           {{-- <ul v-for="(menu, index) in footerMenus" :key="index">
             <li><a :href="menu.href"> {{ menu.title }}</a></li>
             <li v-for="(link, index) in menu.links" :key="index"><a :href="link.href">{{ link.link }}</a></li>
@@ -71,7 +71,7 @@
       </div>
 
       <div class="f-social">
-        <div class="mb-container">
+        <div class="mb-container d-flex">
 
           <button>sign up now!</button>
 

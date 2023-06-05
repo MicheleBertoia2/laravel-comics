@@ -57,3 +57,41 @@
 
     }
   }
+
+  #actions {
+    background-color: $color-blue;
+    color: $color-white;
+    height: 120px;
+    .cards{
+      @include centerFlex(vertical);
+      justify-content: space-around;
+      height: 100%;
+      padding: 40px 0;
+      .mb-card{
+        height: 100%;
+        &:last-child{
+            img{
+              width: 40px;
+            }
+          }
+        a{
+          display: inline-block;
+          color: $color-white;
+          height: 40px;
+          width: 200px;
+          img{
+          height: 40px;
+          width: 40px;
+          vertical-align: middle;
+
+          }
+          span {
+            text-transform: uppercase;
+            margin-left: 10px;
+            font-size: 9px;
+          }
+        }
+
+      }
+    }
+  }
