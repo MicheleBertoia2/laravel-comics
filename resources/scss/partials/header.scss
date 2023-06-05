@@ -20,11 +20,17 @@
           height: 100%;
           color: $color-darkgray;
           border-bottom: 4px solid transparent;
-          padding: 29px 0;
+          padding: 36px 0;
           &.active{
             border-bottom-color: $color-blue;
             color: $color-blue;
           }
         }
       }
+  }
+
+
+  .jumbo{
+    height: 300px;
+    overflow: hidden;
   }

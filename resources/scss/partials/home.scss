@@ -1,0 +1,41 @@
+.moved-up{
+    position: relative;
+    top: -25px;
+  }
+
+  .content{
+    background-color: $color-black;
+
+    .label{
+      height: 50px;
+      width: 180px;
+      background-color: $color-blue;
+      text-align: center;
+      span{
+        text-transform: uppercase;
+        color: white;
+        line-height: 50px;
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+
+    .cards-container{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px 0;
+
+    }
+
+    .load-more{
+      @include centerFlex;
+      padding-bottom: 20px;
+      button{
+        border: none;
+        color: $color-white;
+        background-color: $color-blue;
+        font-weight: 700;
+        padding: 10px 50px;
+      }
+    }
+  }

@@ -17,3 +17,7 @@
         </nav>
       </div>
 </header>
+
+<div class="jumbo">
+    <img src="/img/jumbotron.jpg" alt="dc heroes">
+  </div>
