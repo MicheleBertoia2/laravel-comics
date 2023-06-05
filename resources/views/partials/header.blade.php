@@ -1,10 +1,21 @@
+<?php
+    $menu = config('menus.main_menu')
+?>
+
+
 <header>
-    <div class="top-bar container">
+    <div class="top-bar mb-container">
         <img src="/img/dc-logo.png" alt="">
         <nav>
           <ul>
-            <li><a href="#">characters</a></li>
-            <li><a href="#" class="active">comics</a></li>
+
+              @foreach ($menu as  $item)
+
+              <li><a href="{{ route($item['name']) }}"  class="{{ (Route::currentRouteName()  == $item['name']) ? 'active' : '' }}">{{ $item['text'] }}</a></li>
+
+            @endforeach
+
+            {{-- <li><a href="#" class="active">comics</a></li>
             <li><a href="#">movies</a></li>
             <li><a href="#">tv</a></li>
             <li><a href="#">games</a></li>
@@ -12,7 +23,7 @@
             <li><a href="#">videos</a></li>
             <li><a href="#">fans</a></li>
             <li><a href="#">news</a></li>
-            <li><a href="#">shop</a></li>
+            <li><a href="#">shop</a></li> --}}
           </ul>
         </nav>
       </div>

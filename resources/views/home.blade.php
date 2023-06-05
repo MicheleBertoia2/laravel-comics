@@ -4,7 +4,7 @@
 
 <div class="content">
 
-    <div class="container moved-up">
+    <div class="mb-container moved-up">
 
       <div class="label">
         <span>current series</span>

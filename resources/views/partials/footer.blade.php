@@ -1,12 +1,27 @@
+@php
+    $menus = config('menus.footerMenus')
+@endphp
+
 <footer>
-    <div class="f-top container">
+    <div class="f-top mb-container">
 
         <div class="f-left">
           {{-- <ul v-for="(menu, index) in footerMenus" :key="index">
             <li><a :href="menu.href"> {{ menu.title }}</a></li>
             <li v-for="(link, index) in menu.links" :key="index"><a :href="link.href">{{ link.link }}</a></li>
           </ul> --}}
-         <ul>
+
+
+          @foreach ($menus as  $menu )
+              <ul>
+                <li> <a href="{{$menu['href']}}">{{ $menu['title'] }}</a></li>
+                @foreach ($menu['links'] as $link )
+                    <li><a href="{{  $link['href'] }}">{{ $link['link'] }}</a></li>
+                @endforeach
+              </ul>
+          @endforeach
+
+         {{-- <ul>
             <li><a href="#">dc comics</a></li>
             <li><a href="#">characters</a></li>
             <li><a href="#">comics</a></li>
@@ -45,7 +60,7 @@
             <li><a href="#">DC kids</a></li>
             <li><a href="#">DC universe</a></li>
             <li><a href="#">DC power visa</a></li>
-          </ul>
+          </ul> --}}
 
         </div>
 
@@ -56,7 +71,7 @@
       </div>
 
       <div class="f-social">
-        <div class="container">
+        <div class="mb-container">
 
           <button>sign up now!</button>
 
