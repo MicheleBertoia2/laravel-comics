@@ -1,8 +1,15 @@
 @import "~bootstrap/scss/bootstrap";
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
 // CUSTOM  CSS
 
 @import './vars';
 @import './general';
 @import './mixin.scss';
 @import './utils';
+
+
+@import 'partials/header.scss';
+@import 'partials/footer.scss';
