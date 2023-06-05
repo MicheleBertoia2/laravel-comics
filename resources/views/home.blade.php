@@ -11,10 +11,18 @@
       </div>
 
       <div class="cards-container">
+        @forelse ($comics as $comic )
 
-        <div class="card">ciao</div>
-        <div class="card">ciao</div>
-        <div class="card">ciao</div>
+            <div class="mb-card">
+                <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                <h4>{{ $comic['title'] }}</h4>
+            </div>
+
+        @empty
+
+        <p>Non ci sono articoli </p>
+
+        @endforelse
 
       </div>
 
