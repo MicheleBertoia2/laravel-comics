@@ -1,5 +1,9 @@
 .product-section{
-    color: $color-blue;
+    h2,h4{
+      color: $color-blue;
+    }
+    color: lighten($color: $color-black, $amount: 30%);
+
     .product-box{
         min-height: 800px;
         padding: 50px  0;
@@ -17,7 +21,6 @@
                 margin-bottom: 30px;
               }
               p{
-                color: lighten($color: $color-black, $amount: 30%);
                 margin-bottom:  110px;
               }
               .info-box{
@@ -34,12 +37,22 @@
             }
         }
       .bot-box{
+        h4{
+          padding-bottom: 20px;
+          border-bottom: 1px solid lighten($color: $color-black, $amount: 30%);
+        }
         .talent{
           width: 45%;
           margin-right: 30px;
+          padding: 0 15px;
         }
         .specs{
           width: 45%;
+          padding: 0 15px;
+        }
+        .lined{
+          padding: 20px 0;
+          border-bottom: 1px solid lighten($color: $color-black, $amount: 30%);
         }
       }
     }
