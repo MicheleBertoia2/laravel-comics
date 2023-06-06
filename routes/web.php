@@ -54,6 +54,11 @@ Route::get('/shop', function () {
     return view('shop');
 })->name('shop');
 
-Route::get('/product-detail', function () {
-    return view('product_detail');
+Route::get('/product-detail/{id}', function ($id) {
+
+  $comics = config('comics');
+  $comic_get = array_filter($comics, fn($item) => $item['id'] == $id);
+  $comic  = $comic_get[array_key_first($comic_get)];
+
+    return view('product_detail', compact($comic));
 })->name('product_detail');
