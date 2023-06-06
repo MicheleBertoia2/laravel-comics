@@ -60,5 +60,5 @@ Route::get('/product-detail/{id}', function ($id) {
   $comic_get = array_filter($comics, fn($item) => $item['id'] == $id);
   $comic  = $comic_get[array_key_first($comic_get)];
 
-    return view('product_detail', compact($comic));
+    return view('product_detail', compact('comic'));
 })->name('product_detail');
