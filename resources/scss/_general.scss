@@ -8,6 +8,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+main  {
+    background-color: $color-black;
+}
+
 li {
   list-style: none;
 }
@@ -26,3 +30,4 @@ img {
   max-width: 900px;
   margin: 0 auto;
 }
+

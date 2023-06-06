@@ -1,0 +1,46 @@
+.product-section{
+    color: $color-blue;
+    .product-box{
+        min-height: 800px;
+        padding: 50px  0;
+        .up-box{
+            margin-bottom: 50px;
+            .image-box{
+              img{
+                  max-width: none;
+                  height: 360px;
+                }
+            }
+            .desc-box{
+              padding-left: 30px;
+              h2{
+                margin-bottom: 30px;
+              }
+              p{
+                color: lighten($color: $color-black, $amount: 30%);
+                margin-bottom:  110px;
+              }
+              .info-box{
+                span{
+                  display: block;
+                  color: white;
+                  background-color: $color-blue;
+                  height: 30px;
+                  padding: 0 20px;
+                  line-height: 30px;
+                  text-align: center;
+                }
+              }
+            }
+        }
+      .bot-box{
+        .talent{
+          width: 45%;
+          margin-right: 30px;
+        }
+        .specs{
+          width: 45%;
+        }
+      }
+    }
+}
