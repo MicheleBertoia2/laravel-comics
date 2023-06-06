@@ -14,7 +14,9 @@
         @forelse ($comics as $comic )
 
             <div class="mb-card">
-                <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                <a href="{{ route('product_detail') }}">
+                    <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                </a>
                 <h4>{{ $comic['title'] }}</h4>
             </div>
 

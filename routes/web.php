@@ -53,3 +53,7 @@ Route::get('/news', function () {
 Route::get('/shop', function () {
     return view('shop');
 })->name('shop');
+
+Route::get('/product-detail', function () {
+    return view('product_detail');
+})->name('product_detail');
